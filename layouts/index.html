@@ -1,0 +1,7 @@
+{{ partial "header.html" . }}
+<ul>
+    {{ range (.Paginator 1000).Pages }}
+    {{ .Render "list" }}
+    {{ end }}
+</ul>
+{{ partial "footer.html" . }}
