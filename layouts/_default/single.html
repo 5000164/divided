@@ -1,3 +1,6 @@
 {{ partial "header.html" . }}
-{{ .Content }}
+<article>
+    <h1>{{ .Date.Format "2006-01-02" }} {{ .Title }}</h1>
+    {{ .Content }}
+</article>
 {{ partial "footer.html" . }}
