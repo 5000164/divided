@@ -2,11 +2,11 @@ name = "Divided"
 license = "NYSL"
 licenselink = "https://github.com/5000164/divided/blob/master/LICENSE.txt"
 description = ""
-homepage = "http://5000164.com"
+homepage = "https://github.com/5000164/divided"
 tags = []
 features = []
 min_version = "0.26"
 
 [author]
   name = "SUGAWARA Hiroshi"
-  homepage = "http://5000164.com"
+  homepage = "http://5000164.jp"
