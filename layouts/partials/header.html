@@ -2,11 +2,12 @@
 <html lang="{{ .Site.LanguageCode }}">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    {{ .Hugo.Generator }}
     <title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
     <link rel="icon" href="/favicon.ico">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/monokai.css">
-    {{ .Hugo.Generator }}
 </head>
 <body>
 <header>
