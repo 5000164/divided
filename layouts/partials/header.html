@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=600">
     {{ .Hugo.Generator }}
     <title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
-    <link rel="icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/monokai.css">
-    <link rel="canonical" href="{{ .Permalink }}">
+    <link href="/favicon.ico" rel="icon">
+    <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/monokai.css" rel="stylesheet">
+    <link href="{{ .Permalink }}" rel="canonical">
 </head>
 <body>
 <header>
