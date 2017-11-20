@@ -1,1 +1,6 @@
-<li><a href="{{ .Permalink }}">{{ .Date.Format "2006-01-02" }} {{ .Title }}</a></li>
+<li>
+    <a href="{{ .Permalink }}">
+        <div>{{ .Date.Format "2006-01-02" }}</div>
+        <div>{{ .Title }}</div>
+    </a>
+</li>

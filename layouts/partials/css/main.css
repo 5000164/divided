@@ -35,6 +35,26 @@ footer {
     letter-spacing: -0.2rem;
 }
 
+.articles {
+    list-style: none;
+    margin: 0 20px;
+    padding: 0;
+}
+
+.articles > li {
+    margin: 40px 0;
+}
+
+.articles > li > a {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 2rem;
+}
+
+.articles > li > a > div:first-child {
+    white-space: nowrap;
+}
+
 article {
     margin-top: 80px;
     margin-bottom: 80px;
