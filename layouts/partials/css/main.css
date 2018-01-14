@@ -124,6 +124,29 @@ img {
     margin: 0 auto;
 }
 
+body > blockquote {
+    width: 600px;
+    margin: 40px auto;
+}
+
+body > blockquote > p {
+    position: relative;
+    width: 580px;
+    padding-left: 20px;
+}
+
+body > blockquote > p::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: #e3e4e6;
+    border-radius: 8px;
+}
+
 .highlighttable {
     table-layout: fixed;
     width: 100%;
