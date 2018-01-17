@@ -10,6 +10,8 @@
     <meta property="og:title" content="{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
     <meta property="og:description" content="{{ if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     <meta property="og:url" content="{{ .Permalink }}">
+    <meta name="twitter:card" content="{{ .Site.Params.twitter_card }}">
+    <meta name="twitter:site" content="{{ .Site.Params.twitter_site }}">
     <style type="text/css">{{ partial "css/main.css" . | print | safeCSS }}{{ partial "css/monokai.css" . | print | safeCSS }}</style>
     <link href="/favicon.ico" rel="icon">
     {{ .Hugo.Generator }}
