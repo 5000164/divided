@@ -201,5 +201,6 @@ blockquote > p::before {
 }
 
 .highlight tbody {
+    min-width: 600px;
     max-width: 100%;
 }
