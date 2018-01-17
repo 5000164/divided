@@ -84,7 +84,7 @@ a:visited {
 
 /* 記事ページの設定 */
 .title {
-    margin: 40px auto;
+    margin: 40px 0;
 }
 
 h1 {
@@ -101,7 +101,7 @@ h1 {
 }
 
 .content {
-    margin: 40px auto;
+    margin: 40px 0;
 }
 
 .content p {
@@ -184,35 +184,22 @@ blockquote > p::before {
     border-radius: 8px;
 }
 
-.highlighttable {
-    table-layout: fixed;
-    width: 100%;
-    background-color: #272822;
-    border-spacing: 0;
-}
-
-.highlighttable > tbody {
-    display: block;
-    width: 600px;
-    margin: auto;
+.highlight {
+    margin: 40px 0;
     background-color: #272822;
 }
 
-.highlighttable .linenos {
-    width: 22px;
-    padding-left: 2px;
-    padding-right: 6px;
-    color: #f8f8f2;
-    text-align: right;
+.highlight > div {
+    max-width: 100%;
+    margin: 0 auto;
 }
 
-.highlighttable .code {
-    width: 566px;
-    padding-left: 2px;
-    padding-right: 2px;
-    overflow-x: scroll;
+.highlight table {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
 }
 
-.highlighttable .highlight {
-    width: 566px;
+.highlight tbody {
+    max-width: 100%;
 }
