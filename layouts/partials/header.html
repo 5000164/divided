@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
 <head>
+    {{ template "_internal/google_analytics_async.html" . }}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=640">
     <style type="text/css">{{ partial "css/main.css" . | print | safeCSS }}{{ partial "css/monokai.css" . | print | safeCSS }}</style>
