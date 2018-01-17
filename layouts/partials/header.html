@@ -12,7 +12,7 @@
     <meta property="og:url" content="{{ .Permalink }}">
     <meta name="twitter:card" content="{{ .Site.Params.twitter_card }}">
     <meta name="twitter:site" content="{{ .Site.Params.twitter_site }}">
-    <style type="text/css">{{ partial "css/main.css" . | print | safeCSS }}</style>
+    <style type="text/css">{{ partial "css/main.min.css" . | print | safeCSS }}</style>
     <link href="/favicon.ico" rel="icon">
     {{ .Hugo.Generator }}
 </head>
