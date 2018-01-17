@@ -1,4 +1,6 @@
 [Params]
 description = ""
+icon = "icon.png"
 twitter_card = "summary"
 twitter_site = "@"
+twitter_creator = "@"
