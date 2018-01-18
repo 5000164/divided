@@ -36,8 +36,12 @@ header > a {
   letter-spacing: -5vw;
   transform-origin: top center;
   transform: scaleY(0.5);
+  color: #818398;
   text-decoration: none;
   white-space: nowrap;
+}
+header > a:visited {
+  color: #818398;
 }
 footer {
   width: 600px;
