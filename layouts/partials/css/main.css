@@ -72,10 +72,11 @@ a:visited {
 }
 .articles > li > a {
   display: grid;
-  grid-template-columns: auto 1fr;
-  grid-gap: 2rem;
+  grid-template-columns: 100px 1fr;
+  grid-gap: 2vw;
 }
 .articles > li > a > div:first-child {
+  text-align: right;
   white-space: nowrap;
 }
 .articles > li > a > div:last-child {
