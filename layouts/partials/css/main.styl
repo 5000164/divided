@@ -15,6 +15,10 @@ html
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
 
+  @media (max-width 640px)
+    // スマホでは文字を大きくする
+    font-size 75%
+
 body
   width 100%
   height 100%
@@ -24,15 +28,13 @@ body
   color hsl(235, 10%, 30%)
   background-color hsl(0, 100%, 100%)
 
-// スマホでは文字を大きくする
-@media (max-width 640px)
-  html
-    font-size 75%
-
 header
   width 600px
   margin 60px auto 120px
   letter-spacing -0.2rem
+
+  @media (max-width 640px)
+    width 95%
 
   > a
     text-decoration none
@@ -42,6 +44,9 @@ footer
   margin 120px auto 60px
   text-align right
   letter-spacing -0.2rem
+
+  @media (max-width 640px)
+    width 95%
 
 a
   color hsl(235, 10%, 30%)
@@ -55,6 +60,9 @@ a
   list-style none
   margin 0 auto 20px
   padding 0
+
+  @media (max-width 640px)
+    width 95%
 
   > li
     margin 60px 0
@@ -83,10 +91,16 @@ h1
   font-size 3rem
   font-weight bold
 
+  @media (max-width 640px)
+    width 95%
+
 .date
   width 600px
   margin 0 auto
   text-align right
+
+  @media (max-width 640px)
+    width 95%
 
 .content
   margin 40px 0
@@ -94,6 +108,9 @@ h1
   p
     width 600px
     margin 40px auto
+
+    @media (max-width 640px)
+      width 95%
 
     &:first-child
       margin-top 0
@@ -106,6 +123,9 @@ h1
     margin 120px auto 20px
     font-size 2.4rem
     font-weight bold
+
+    @media (max-width 640px)
+      width 95%
 
     &:first-child
       margin-top 0
@@ -123,28 +143,48 @@ h1
     font-weight normal
     text-align center
 
+    @media (max-width 640px)
+      width 95%
+
   ul
     width 580px
     margin auto
     padding-left 20px
 
+    @media (max-width 640px)
+      width 90%
+      padding-left 5%
+
   figure
     width 600px
     margin auto
+
+    @media (max-width 640px)
+      width 95%
 
   img
     display block
     max-width 600px
     margin 0 auto
 
+    @media (max-width 640px)
+      max-width 95%
+
   blockquote
     width 600px
     margin 20px auto
+
+    @media (max-width 640px)
+      width 95%
 
     > p
       position relative
       width 580px
       padding-left 20px
+
+      @media (max-width 640px)
+        width 96%
+        padding-left 4%
 
       &::before
         content ""
@@ -166,10 +206,15 @@ h1
       margin 0 auto
 
     table
+      // Chroma が要素に直接スタイルを指定しているものを上書きするため
       display flex !important
       justify-content center
       align-items center
 
     tbody
       min-width 600px
-      max-width 100%
+      max-width 98%
+
+      @media (max-width 640px)
+        min-width 95%
+        max-width 95%

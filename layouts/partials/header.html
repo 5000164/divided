@@ -3,7 +3,7 @@
 <head>
     {{ template "_internal/google_analytics_async.html" . }}
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=640">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
     <meta name="description" content="{{ if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     <link href="{{ .Permalink }}" rel="canonical">

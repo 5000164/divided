@@ -10,6 +10,11 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@media (max-width: 640px) {
+  html {
+    font-size: 75%;
+  }
+}
 body {
   width: 100%;
   height: 100%;
@@ -19,15 +24,15 @@ body {
   color: #454654;
   background-color: #fff;
 }
-@media (max-width: 640px) {
-  html {
-    font-size: 75%;
-  }
-}
 header {
   width: 600px;
   margin: 60px auto 120px;
   letter-spacing: -0.2rem;
+}
+@media (max-width: 640px) {
+  header {
+    width: 95%;
+  }
 }
 header > a {
   text-decoration: none;
@@ -37,6 +42,11 @@ footer {
   margin: 120px auto 60px;
   text-align: right;
   letter-spacing: -0.2rem;
+}
+@media (max-width: 640px) {
+  footer {
+    width: 95%;
+  }
 }
 a {
   color: #454654;
@@ -49,6 +59,11 @@ a:visited {
   list-style: none;
   margin: 0 auto 20px;
   padding: 0;
+}
+@media (max-width: 640px) {
+  .articles {
+    width: 95%;
+  }
 }
 .articles > li {
   margin: 60px 0;
@@ -75,10 +90,20 @@ h1 {
   font-size: 3rem;
   font-weight: bold;
 }
+@media (max-width: 640px) {
+  h1 {
+    width: 95%;
+  }
+}
 .date {
   width: 600px;
   margin: 0 auto;
   text-align: right;
+}
+@media (max-width: 640px) {
+  .date {
+    width: 95%;
+  }
 }
 .content {
   margin: 40px 0;
@@ -86,6 +111,11 @@ h1 {
 .content p {
   width: 600px;
   margin: 40px auto;
+}
+@media (max-width: 640px) {
+  .content p {
+    width: 95%;
+  }
 }
 .content p:first-child {
   margin-top: 0;
@@ -98,6 +128,11 @@ h1 {
   margin: 120px auto 20px;
   font-size: 2.4rem;
   font-weight: bold;
+}
+@media (max-width: 640px) {
+  .content h2 {
+    width: 95%;
+  }
 }
 .content h2:first-child {
   margin-top: 0;
@@ -115,28 +150,60 @@ h1 {
   font-weight: normal;
   text-align: center;
 }
+@media (max-width: 640px) {
+  .content h4 {
+    width: 95%;
+  }
+}
 .content ul {
   width: 580px;
   margin: auto;
   padding-left: 20px;
 }
+@media (max-width: 640px) {
+  .content ul {
+    width: 90%;
+    padding-left: 5%;
+  }
+}
 .content figure {
   width: 600px;
   margin: auto;
+}
+@media (max-width: 640px) {
+  .content figure {
+    width: 95%;
+  }
 }
 .content img {
   display: block;
   max-width: 600px;
   margin: 0 auto;
 }
+@media (max-width: 640px) {
+  .content img {
+    max-width: 95%;
+  }
+}
 .content blockquote {
   width: 600px;
   margin: 20px auto;
+}
+@media (max-width: 640px) {
+  .content blockquote {
+    width: 95%;
+  }
 }
 .content blockquote > p {
   position: relative;
   width: 580px;
   padding-left: 20px;
+}
+@media (max-width: 640px) {
+  .content blockquote > p {
+    width: 96%;
+    padding-left: 4%;
+  }
 }
 .content blockquote > p::before {
   content: "";
@@ -164,5 +231,11 @@ h1 {
 }
 .content .highlight tbody {
   min-width: 600px;
-  max-width: 100%;
+  max-width: 98%;
+}
+@media (max-width: 640px) {
+  .content .highlight tbody {
+    min-width: 95%;
+    max-width: 95%;
+  }
 }
