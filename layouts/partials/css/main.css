@@ -10,11 +10,6 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-@media (max-width: 640px) {
-  html {
-    font-size: 75%;
-  }
-}
 body {
   width: 100%;
   height: 100%;
@@ -23,6 +18,11 @@ body {
   line-height: 1.73;
   color: #454654;
   background-color: #fff;
+}
+@media (max-width: 640px) {
+  body {
+    line-height: 1.9;
+  }
 }
 header {
   height: 15vw;
