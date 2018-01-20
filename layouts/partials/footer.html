@@ -1,6 +1,13 @@
 <footer>
-    <div>菅原 浩</div>
-    <div><a href="https://github.com/5000164/profile">About</a></div>
+    <ul>
+        {{ range .Site.Sections }}
+        {{ .Render "section-list-item" }}
+        {{ end }}
+    </ul>
+    <div class="about">
+        <div>菅原 浩</div>
+        <div><a href="https://github.com/5000164/profile">About</a></div>
+    </div>
 </footer>
 
 {{ template "_internal/google_analytics_async.html" . }}
