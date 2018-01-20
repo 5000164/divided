@@ -1,8 +1,8 @@
-name = "Divided"
+name = "Remember"
 license = "NYSL"
-licenselink = "https://github.com/5000164/divided/blob/master/LICENSE.txt"
+licenselink = "https://github.com/5000164/remember/blob/master/LICENSE.txt"
 description = ""
-homepage = "https://github.com/5000164/divided"
+homepage = "https://github.com/5000164/remember"
 tags = []
 features = []
 min_version = "0.26"
