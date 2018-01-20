@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 <ul class="articles">
-    {{ range (.Paginator 1000).Pages }}
+    {{ range .Data.Pages }}
     {{ .Render "list" }}
     {{ end }}
 </ul>
