@@ -83,11 +83,17 @@ header > a:hover::after {
 }
 footer {
   width: 600px;
-  margin: 120px auto 60px;
+  margin: 80px auto;
 }
-footer .about {
+footer .writer {
   text-align: right;
   letter-spacing: -0.2rem;
+}
+footer .about {
+  margin-top: 200px;
+}
+footer .year {
+  margin-top: 80px;
 }
 @media (max-width: 640px) {
   footer {
