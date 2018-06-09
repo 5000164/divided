@@ -208,13 +208,15 @@ h1 {
     width: 95%;
   }
 }
-.content ul {
+.content ul,
+.content ol {
   width: 580px;
   margin: auto;
   padding-left: 20px;
 }
 @media (max-width: 640px) {
-  .content ul {
+  .content ul,
+  .content ol {
     width: 90%;
     padding-left: 5%;
   }
