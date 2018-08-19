@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 <article>
     <div class="title">
-        <div class="date">{{ .Date.Format "2006.1.2" }}</div>
+        <div class="date"><a href="https://github.com/5000164/blog/commits/master/content/{{ .File.Path }}">{{ .Date.Format "2006.1.2" }}</a></div>
         <h1>{{ .Title }}</h1>
     </div>
     <div class="content">
