@@ -1,8 +1,8 @@
 {{ partial "header.html" . }}
 <article>
     <div class="title">
-        <div class="date"><a href="https://github.com/5000164/blog/commits/master/content/{{ .File.Path }}">{{ .Date.Format "2006.1.2" }}</a></div>
         <h1>{{ .Title }}</h1>
+        <div class="date">Published {{ .Date.Format "2006.1.2" }} by <a href="https://github.com/5000164/profile">菅原 浩</a></div>
     </div>
     <div class="content">
         {{ .Content }}
