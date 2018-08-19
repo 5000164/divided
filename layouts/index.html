@@ -1,4 +1,8 @@
 {{ partial "header.html" . }}
+<div class="about">
+    <div>菅原 浩 のブログです。</div>
+    <div>プロフィールは<a href="https://github.com/5000164/profile">こちら</a>。</div>
+</div>
 <ul class="articles">
     {{ range .Data.Pages }}
     {{ .Render "list" }}
