@@ -1,6 +1,5 @@
 <li>
-    <a href="{{ .Permalink }}">
-        <div>{{ .Date.Format "2006.1.2" }}</div>
-        <div>{{ .Title }}</div>
-    </a>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <div>{{ .Date.Format "2006.1.2" }}</div>
+    <p>{{ substr .Summary 0 300}}{{ if gt (len .Summary) 300 }} ... <a href="{{ .Permalink }}">more</a>{{ end }}</p>
 </li>
