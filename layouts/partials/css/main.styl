@@ -24,7 +24,7 @@ body
   color hsl(235, 10%, 30%)
   background-color hsl(0, 100%, 100%)
 
-  @media (max-width 640px)
+  @media (max-width 800px)
     // スマホでは行間を少し広くする
     line-height 1.9
 
@@ -33,7 +33,7 @@ header
   margin 8px 8px 0 8px
   background hsl(0, 0%, 16%)
 
-  @media (max-width 640px)
+  @media (max-width 800px)
     height 48vw
 
   > a
@@ -50,7 +50,7 @@ header
     text-decoration none
     white-space nowrap
 
-    @media (max-width 640px)
+    @media (max-width 800px)
       transform scaleY(2)
       line-height .5
 
@@ -63,7 +63,7 @@ footer
   text-align center
   color hsl(235, 10%, 65%)
 
-  @media (max-width 640px)
+  @media (max-width 800px)
     width 95%
 
 a
@@ -79,17 +79,17 @@ a
   background hsl(0, 0%, 16%)
   color hsl(0, 100%, 100%)
 
-  @media (max-width 640px)
+  @media (max-width 800px)
     padding 60px 0 120px
 
 // トップページの設定
 .articles
-  width 600px
+  width 800px
   list-style none
   margin 0 auto 20px
   padding 0
 
-  @media (max-width 640px)
+  @media (max-width 800px)
     width 95%
 
   > li
@@ -117,21 +117,23 @@ a
   background hsl(0, 0%, 16%)
   color hsl(0, 100%, 100%)
 
-  @media (max-width 640px)
+  @media (max-width 800px)
     padding 60px 0 120px
 
 h1
-  width 600px
+  max-width 1200px
+  width 100%
   margin 0 auto
   font-size 3rem
   font-weight bold
   text-align center
 
-  @media (max-width 640px)
+  @media (max-width 800px)
     width 95%
 
 .date
-  width 600px
+  max-width 1200px
+  width 100%
   margin 10px auto 0
   font-size 1.2rem
   text-align center
@@ -143,17 +145,17 @@ h1
     &:visited
       color hsl(235, 10%, 65%)
 
-  @media (max-width 640px)
+  @media (max-width 800px)
     width 95%
 
 .content
   margin 40px 0
 
   p
-    width 600px
+    width 800px
     margin 40px auto
 
-    @media (max-width 640px)
+    @media (max-width 800px)
       width 95%
 
     &:first-child
@@ -163,12 +165,12 @@ h1
       margin-bottom 0
 
   h2
-    width 600px
+    width 800px
     margin 120px auto 20px
     font-size 2.4rem
     font-weight bold
 
-    @media (max-width 640px)
+    @media (max-width 800px)
       width 95%
 
     &:first-child
@@ -181,52 +183,52 @@ h1
       margin-top 0
 
   h4
-    width 600px
+    width 800px
     margin 10px auto 10px
     font-size 1.8rem
     font-weight normal
     text-align center
 
-    @media (max-width 640px)
+    @media (max-width 800px)
       width 95%
 
   ul, ol
-    width 580px
+    width 780px
     margin auto
     padding-left 20px
 
-    @media (max-width 640px)
+    @media (max-width 800px)
       width 90%
       padding-left 5%
 
   figure
-    width 600px
+    width 800px
     margin auto
 
-    @media (max-width 640px)
+    @media (max-width 800px)
       width 95%
 
   img
     display block
-    max-width 600px
+    max-width 800px
     margin 0 auto
 
-    @media (max-width 640px)
+    @media (max-width 800px)
       max-width 95%
 
   blockquote
-    width 600px
+    width 800px
     margin 20px auto
 
-    @media (max-width 640px)
+    @media (max-width 800px)
       width 95%
 
     > p
       position relative
-      width 580px
+      width 780px
       padding-left 20px
 
-      @media (max-width 640px)
+      @media (max-width 800px)
         width 96%
         padding-left 4%
 
@@ -256,9 +258,9 @@ h1
       align-items center
 
     tbody
-      min-width 600px
+      min-width 800px
       max-width 98%
 
-      @media (max-width 640px)
+      @media (max-width 800px)
         min-width 95%
         max-width 95%
