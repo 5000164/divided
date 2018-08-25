@@ -29,23 +29,19 @@ body
     line-height 1.9
 
 header
-  height 12vw
-  margin 8px 8px 0 8px
-  background hsl(0, 0%, 16%)
-
-  @media (max-width 800px)
-    height 48vw
-
   > a
     display block
-    // 見た目で調整
-    margin 0 0 0 -3vw
+    position absolute
+    top 8px
+    left 0
+    right 0
+    transform-origin top center
+    transform scaleY(.5)
+    margin 3vw 0 0 -3vw
     font-size 24vw
     text-align-last justify
     letter-spacing -5vw
-    transform-origin top center
-    transform scaleY(.5)
-    line-height .5
+    line-height .1
     color hsl(0, 100%, 100%)
     text-decoration none
     white-space nowrap
@@ -77,20 +73,20 @@ a
     color hsl(235, 10%, 50%)
 
 .about
-  margin 0 8px 0
-  padding 120px 0 240px
+  margin 8px 8px 0
+  padding calc(12vw - -200px) 0 calc(5vw - -240px)
   text-align center
   background hsl(0, 0%, 16%)
   color hsl(0, 100%, 100%)
 
   @media (max-width 800px)
-    padding 60px 0 120px
+    padding calc(36vw - -160px) 0 calc(5vw - -180px)
 
 // トップページの設定
 .articles
   width 800px
   list-style none
-  margin 0 auto 20px
+  margin 60px auto 20px
   padding 0
 
   @media (max-width 800px)
@@ -113,13 +109,13 @@ a
 
 // 記事ページの設定
 .title
-  margin 0 8px 8px 8px
-  padding 120px 0 240px
+  margin 8px 8px 0
+  padding calc(12vw - -200px) 0 calc(5vw - -240px)
   background hsl(0, 0%, 16%)
   color hsl(0, 100%, 100%)
 
   @media (max-width 800px)
-    padding 60px 0 120px
+    padding calc(36vw - -160px) 0 calc(5vw - -180px)
 
 h1
   max-width 1200px
