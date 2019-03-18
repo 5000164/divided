@@ -1,8 +1,13 @@
 {{ partial "header.html" . }}
-<div class="about">
-    <div>菅原 浩 のブログです。</div>
-    <div>プロフィールは<a href="https://github.com/5000164/profile">こちら</a>。</div>
-</div>
+<header>
+    <a href="{{ .Site.BaseURL }}" class="title blog_name">{{ .Site.Title }}</a>
+    <div class="subtitle">My writing is my life.</div>
+    <ul class="about">
+        <li><a href="https://github.com/5000164/profile">About me</a></li>
+        <li><a href="https://github.com/5000164">GitHub</a></li>
+        <li><a href="https://twitter.com/5000164">Twitter</a></li>
+    </ul>
+</header>
 <ul class="articles">
     {{ range .Data.Pages }}
     {{ .Render "list" }}

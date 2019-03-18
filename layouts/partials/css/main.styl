@@ -29,29 +29,64 @@ body
     line-height 1.9
 
 header
-  > a
-    display block
-    position absolute
-    top 8px
-    left 0
-    right 0
-    transform-origin top center
-    transform scaleY(.5)
-    margin -2.2vw 0 0 -3vw
-    font-size 24vw
-    text-align-last justify
-    letter-spacing -5vw
-    line-height 1
-    color hsl(0, 100%, 100%)
-    text-decoration none
-    white-space nowrap
+  margin 8px 8px 0
+  padding-top calc(8vw - -180px)
+  padding-bottom calc(8vw - -160px)
+  padding-left 0
+  padding-right 0
+  text-align center
+  background hsl(0, 0%, 16%)
 
-    @media (max-width 800px)
-      transform scaleY(2)
-      margin: -8.8vw 0 0 -3vw
+.title
+  display block
+  max-width 1200px
+  width 100%
+  margin 0 auto
+  font-size 3rem
+  font-weight bold
+  text-align center
+  color hsl(0, 100%, 100%)
+  text-decoration none
+
+  &:visited
+    color hsl(0, 100%, 100%)
+
+  @media (max-width 800px)
+    width 95%
+
+.subtitle
+  max-width 1200px
+  width 100%
+  margin 10px auto 0
+  font-size 1.2rem
+  text-align center
+  color hsl(235, 10%, 60%)
+
+  @media (max-width 800px)
+    width 95%
+
+.blog_name
+  font-size 2.6rem
+  font-family Georgia, serif
+  letter-spacing -0.2rem
+  line-height 1
+
+.about
+  list-style-type: none
+  margin 60px 0 0
+  padding 0
+
+  li
+    line-height 1.2
+
+  a
+    font-size 1.6rem
+    line-height 1
+    text-align center
+    color hsl(235, 10%, 80%)
 
     &:visited
-      color hsl(0, 100%, 100%)
+      color hsl(235, 10%, 80%)
 
 footer
   margin 240px auto 10px
@@ -67,26 +102,11 @@ footer
     margin 0 0 10px
 
 a
-  color hsl(235, 10%, 30%)
+  color hsl(235, 10%, 50%)
+  text-decoration none
 
   &:visited
-    color hsl(235, 10%, 50%)
-
-.about
-  margin 8px 8px 0
-  padding-top calc(12vw - -200px)
-  padding-bottom calc(5vw - -240px)
-  padding-left 0
-  padding-right 0
-  text-align center
-  background hsl(0, 0%, 16%)
-  color hsl(0, 100%, 100%)
-
-  @media (max-width 800px)
-    padding-top calc(42vw - -80px)
-    padding-bottom calc(5vw - -100px)
-    padding-left 0
-    padding-right 0
+    color hsl(235, 10%, 60%)
 
 // トップページの設定
 .articles
@@ -114,49 +134,11 @@ a
       word-break break-all
 
 // 記事ページの設定
-.title
-  margin 8px 8px 0
-  padding-top calc(12vw - -200px)
-  padding-bottom calc(5vw - -240px)
-  padding-left 0
-  padding-right 0
-  text-align center
-  background hsl(0, 0%, 16%)
-  color hsl(0, 100%, 100%)
-
-  @media (max-width 800px)
-    padding-top calc(42vw - -80px)
-    padding-bottom calc(5vw - -100px)
-    padding-left 0
-    padding-right 0
-
-h1
-  max-width 1200px
-  width 100%
-  margin 0 auto
-  font-size 3rem
-  font-weight bold
-  text-align center
-
-  @media (max-width 800px)
-    width 95%
-
-.date
-  max-width 1200px
-  width 100%
-  margin 10px auto 0
-  font-size 1.2rem
-  text-align center
-  color hsl(235, 10%, 65%)
-
-  > a
-    color hsl(235, 10%, 65%)
-
-    &:visited
-      color hsl(235, 10%, 65%)
-
-  @media (max-width 800px)
-    width 95%
+.top
+  position absolute
+  top 16px
+  left 0
+  right 0
 
 .content
   margin 40px 0
@@ -173,6 +155,16 @@ h1
 
     &:last-child
       margin-bottom 0
+
+  h1
+    width 800px
+    margin 120px auto 20px
+    font-size 3rem
+    font-weight bold
+    text-align center
+
+    @media (max-width 800px)
+      width 95%
 
   h2
     width 800px

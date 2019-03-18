@@ -1,11 +1,10 @@
 {{ partial "header.html" . }}
-<article>
-    <div class="title">
-        <h1>{{ .Title }}</h1>
-        <div class="date">Published {{ .Date.Format "2006.1.2" }} by <a href="https://github.com/5000164/profile">菅原 浩</a></div>
-    </div>
-    <div class="content">
-        {{ .Content }}
-    </div>
+<header>
+    <a href="{{ .Site.BaseURL }}" class="blog_name top">{{ .Site.Title }}</a>
+    <a href="{{ .Permalink }}" class="title">{{ .Title }}</a>
+    <div class="subtitle">Published {{ .Date.Format "2006.1.2" }} by Hiroshi Sugawara</div>
+</header>
+<article class="content">
+    {{ .Content }}
 </article>
 {{ partial "footer.html" . }}
